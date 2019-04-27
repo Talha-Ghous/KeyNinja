@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5782220D226EDFEF00096ABB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5782220C226EDFEF00096ABB /* AppDelegate.swift */; };
+		5782220F226EDFEF00096ABB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5782220E226EDFEF00096ABB /* ViewController.swift */; };
+		57822212226EDFEF00096ABB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57822210226EDFEF00096ABB /* Main.storyboard */; };
+		57822215226EDFEF00096ABB /* KeyNinja.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 57822213226EDFEF00096ABB /* KeyNinja.xcdatamodeld */; };
+		57822217226EDFF300096ABB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57822216226EDFF300096ABB /* Assets.xcassets */; };
+		5782221A226EDFF300096ABB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57822218226EDFF300096ABB /* LaunchScreen.storyboard */; };
+		57822225226EDFF300096ABB /* KeyNinjaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57822224226EDFF300096ABB /* KeyNinjaTests.swift */; };
+		57822230226EDFF400096ABB /* KeyNinjaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5782222F226EDFF400096ABB /* KeyNinjaUITests.swift */; };
+		5782223E226EE32C00096ABB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5782223D226EE32B00096ABB /* TableViewController.swift */; };
+		5782224022700DBB00096ABB /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5782223F22700DBB00096ABB /* TableViewCell.swift */; };
+		578222462270105800096ABB /* Customers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578222452270105800096ABB /* Customers.swift */; };
+		57822248227019CA00096ABB /* addCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57822247227019CA00096ABB /* addCustomerViewController.swift */; };
+		5782224A227170F000096ABB /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57822249227170F000096ABB /* Singleton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		57822221226EDFF300096ABB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57822201226EDFEF00096ABB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57822208226EDFEF00096ABB;
+			remoteInfo = KeyNinja;
+		};
+		5782222C226EDFF400096ABB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57822201226EDFEF00096ABB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57822208226EDFEF00096ABB;
+			remoteInfo = KeyNinja;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		57822209226EDFEF00096ABB /* KeyNinja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyNinja.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5782220C226EDFEF00096ABB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5782220E226EDFEF00096ABB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		57822211226EDFEF00096ABB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		57822214226EDFEF00096ABB /* KeyNinja.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KeyNinja.xcdatamodel; sourceTree = "<group>"; };
+		57822216226EDFF300096ABB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		57822219226EDFF300096ABB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5782221B226EDFF300096ABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57822220226EDFF300096ABB /* KeyNinjaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyNinjaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		57822224226EDFF300096ABB /* KeyNinjaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyNinjaTests.swift; sourceTree = "<group>"; };
+		57822226226EDFF300096ABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5782222B226EDFF400096ABB /* KeyNinjaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyNinjaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5782222F226EDFF400096ABB /* KeyNinjaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyNinjaUITests.swift; sourceTree = "<group>"; };
+		57822231226EDFF400096ABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5782223D226EE32B00096ABB /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		5782223F22700DBB00096ABB /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		578222452270105800096ABB /* Customers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customers.swift; sourceTree = "<group>"; };
+		57822247227019CA00096ABB /* addCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addCustomerViewController.swift; sourceTree = "<group>"; };
+		57822249227170F000096ABB /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		57822206226EDFEF00096ABB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5782221D226EDFF300096ABB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57822228226EDFF400096ABB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		57822200226EDFEF00096ABB = {
+			isa = PBXGroup;
+			children = (
+				5782220B226EDFEF00096ABB /* KeyNinja */,
+				57822223226EDFF300096ABB /* KeyNinjaTests */,
+				5782222E226EDFF400096ABB /* KeyNinjaUITests */,
+				5782220A226EDFEF00096ABB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5782220A226EDFEF00096ABB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57822209226EDFEF00096ABB /* KeyNinja.app */,
+				57822220226EDFF300096ABB /* KeyNinjaTests.xctest */,
+				5782222B226EDFF400096ABB /* KeyNinjaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5782220B226EDFEF00096ABB /* KeyNinja */ = {
+			isa = PBXGroup;
+			children = (
+				578222422270101D00096ABB /* Models */,
+				5782220C226EDFEF00096ABB /* AppDelegate.swift */,
+				57822249227170F000096ABB /* Singleton.swift */,
+				5782220E226EDFEF00096ABB /* ViewController.swift */,
+				5782224122700FEB00096ABB /* CustomersViewControler */,
+				57822210226EDFEF00096ABB /* Main.storyboard */,
+				57822216226EDFF300096ABB /* Assets.xcassets */,
+				57822218226EDFF300096ABB /* LaunchScreen.storyboard */,
+				5782221B226EDFF300096ABB /* Info.plist */,
+				57822213226EDFEF00096ABB /* KeyNinja.xcdatamodeld */,
+				57822247227019CA00096ABB /* addCustomerViewController.swift */,
+			);
+			path = KeyNinja;
+			sourceTree = "<group>";
+		};
+		57822223226EDFF300096ABB /* KeyNinjaTests */ = {
+			isa = PBXGroup;
+			children = (
+				57822224226EDFF300096ABB /* KeyNinjaTests.swift */,
+				57822226226EDFF300096ABB /* Info.plist */,
+			);
+			path = KeyNinjaTests;
+			sourceTree = "<group>";
+		};
+		5782222E226EDFF400096ABB /* KeyNinjaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5782222F226EDFF400096ABB /* KeyNinjaUITests.swift */,
+				57822231226EDFF400096ABB /* Info.plist */,
+			);
+			path = KeyNinjaUITests;
+			sourceTree = "<group>";
+		};
+		5782224122700FEB00096ABB /* CustomersViewControler */ = {
+			isa = PBXGroup;
+			children = (
+				5782223D226EE32B00096ABB /* TableViewController.swift */,
+				5782223F22700DBB00096ABB /* TableViewCell.swift */,
+			);
+			path = CustomersViewControler;
+			sourceTree = "<group>";
+		};
+		578222422270101D00096ABB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				578222452270105800096ABB /* Customers.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		57822208226EDFEF00096ABB /* KeyNinja */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57822234226EDFF400096ABB /* Build configuration list for PBXNativeTarget "KeyNinja" */;
+			buildPhases = (
+				57822205226EDFEF00096ABB /* Sources */,
+				57822206226EDFEF00096ABB /* Frameworks */,
+				57822207226EDFEF00096ABB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeyNinja;
+			productName = KeyNinja;
+			productReference = 57822209226EDFEF00096ABB /* KeyNinja.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5782221F226EDFF300096ABB /* KeyNinjaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57822237226EDFF400096ABB /* Build configuration list for PBXNativeTarget "KeyNinjaTests" */;
+			buildPhases = (
+				5782221C226EDFF300096ABB /* Sources */,
+				5782221D226EDFF300096ABB /* Frameworks */,
+				5782221E226EDFF300096ABB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57822222226EDFF300096ABB /* PBXTargetDependency */,
+			);
+			name = KeyNinjaTests;
+			productName = KeyNinjaTests;
+			productReference = 57822220226EDFF300096ABB /* KeyNinjaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5782222A226EDFF400096ABB /* KeyNinjaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5782223A226EDFF400096ABB /* Build configuration list for PBXNativeTarget "KeyNinjaUITests" */;
+			buildPhases = (
+				57822227226EDFF400096ABB /* Sources */,
+				57822228226EDFF400096ABB /* Frameworks */,
+				57822229226EDFF400096ABB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5782222D226EDFF400096ABB /* PBXTargetDependency */,
+			);
+			name = KeyNinjaUITests;
+			productName = KeyNinjaUITests;
+			productReference = 5782222B226EDFF400096ABB /* KeyNinjaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		57822201226EDFEF00096ABB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Talha Ghous";
+				TargetAttributes = {
+					57822208226EDFEF00096ABB = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					5782221F226EDFF300096ABB = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 57822208226EDFEF00096ABB;
+					};
+					5782222A226EDFF400096ABB = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 57822208226EDFEF00096ABB;
+					};
+				};
+			};
+			buildConfigurationList = 57822204226EDFEF00096ABB /* Build configuration list for PBXProject "KeyNinja" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 57822200226EDFEF00096ABB;
+			productRefGroup = 5782220A226EDFEF00096ABB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57822208226EDFEF00096ABB /* KeyNinja */,
+				5782221F226EDFF300096ABB /* KeyNinjaTests */,
+				5782222A226EDFF400096ABB /* KeyNinjaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		57822207226EDFEF00096ABB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5782221A226EDFF300096ABB /* LaunchScreen.storyboard in Resources */,
+				57822217226EDFF300096ABB /* Assets.xcassets in Resources */,
+				57822212226EDFEF00096ABB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5782221E226EDFF300096ABB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57822229226EDFF400096ABB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		57822205226EDFEF00096ABB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5782224022700DBB00096ABB /* TableViewCell.swift in Sources */,
+				578222462270105800096ABB /* Customers.swift in Sources */,
+				57822215226EDFEF00096ABB /* KeyNinja.xcdatamodeld in Sources */,
+				5782220F226EDFEF00096ABB /* ViewController.swift in Sources */,
+				57822248227019CA00096ABB /* addCustomerViewController.swift in Sources */,
+				5782224A227170F000096ABB /* Singleton.swift in Sources */,
+				5782220D226EDFEF00096ABB /* AppDelegate.swift in Sources */,
+				5782223E226EE32C00096ABB /* TableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5782221C226EDFF300096ABB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57822225226EDFF300096ABB /* KeyNinjaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57822227226EDFF400096ABB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57822230226EDFF400096ABB /* KeyNinjaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		57822222226EDFF300096ABB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57822208226EDFEF00096ABB /* KeyNinja */;
+			targetProxy = 57822221226EDFF300096ABB /* PBXContainerItemProxy */;
+		};
+		5782222D226EDFF400096ABB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57822208226EDFEF00096ABB /* KeyNinja */;
+			targetProxy = 5782222C226EDFF400096ABB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		57822210226EDFEF00096ABB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57822211226EDFEF00096ABB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		57822218226EDFF300096ABB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57822219226EDFF300096ABB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		57822232226EDFF400096ABB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		57822233226EDFF400096ABB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		57822235226EDFF400096ABB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KeyNinja/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.talha.KeyNinja;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		57822236226EDFF400096ABB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KeyNinja/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.talha.KeyNinja;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		57822238226EDFF400096ABB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KeyNinjaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.talha.KeyNinjaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeyNinja.app/KeyNinja";
+			};
+			name = Debug;
+		};
+		57822239226EDFF400096ABB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KeyNinjaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.talha.KeyNinjaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeyNinja.app/KeyNinja";
+			};
+			name = Release;
+		};
+		5782223B226EDFF400096ABB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KeyNinjaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.talha.KeyNinjaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KeyNinja;
+			};
+			name = Debug;
+		};
+		5782223C226EDFF400096ABB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KeyNinjaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.talha.KeyNinjaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KeyNinja;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		57822204226EDFEF00096ABB /* Build configuration list for PBXProject "KeyNinja" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57822232226EDFF400096ABB /* Debug */,
+				57822233226EDFF400096ABB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57822234226EDFF400096ABB /* Build configuration list for PBXNativeTarget "KeyNinja" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57822235226EDFF400096ABB /* Debug */,
+				57822236226EDFF400096ABB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57822237226EDFF400096ABB /* Build configuration list for PBXNativeTarget "KeyNinjaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57822238226EDFF400096ABB /* Debug */,
+				57822239226EDFF400096ABB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5782223A226EDFF400096ABB /* Build configuration list for PBXNativeTarget "KeyNinjaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5782223B226EDFF400096ABB /* Debug */,
+				5782223C226EDFF400096ABB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		57822213226EDFEF00096ABB /* KeyNinja.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				57822214226EDFEF00096ABB /* KeyNinja.xcdatamodel */,
+			);
+			currentVersion = 57822214226EDFEF00096ABB /* KeyNinja.xcdatamodel */;
+			path = KeyNinja.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 57822201226EDFEF00096ABB /* Project object */;
+}
